@@ -18,6 +18,10 @@ import './css/style.css'
 
 
 import Home from './Home'
+import Footer from './Footer.js';
+import Login from './Login';
+import Signup from './Signup';
+import notfoundpage from './notfoundpage';
 
 function App() {
   return (
@@ -27,29 +31,33 @@ function App() {
 
       <div className="App">
         <div className="app">
+          <Header />
           <Switch>
+
             {/** component: checkout */}
-            <Route path="/checkout">
+            <Route path="/checkout" >
               <h1>Checkout</h1>
             </Route>
             {/** component: login page */}
 
             <Route path="/login">
-              <h1>Checkout</h1>
+              <Login />
             </Route>
             {/** component: signup page */}
             <Route path="/signup">
-              <h1>Signup</h1>
+              <Signup />
             </Route>
-            <Route path="/">
-              <Header/>
+
+            <Route path="/" exact>
               <h1>Main page</h1>
-              <Home/>
-           </Route>
+              <Home />
+            </Route>
             {/** component: default page */}
 
-      
+            <Route path="" component={notfoundpage}/>
+
           </Switch>
+          <Footer />
         </div>
       </div>
     </Router>
