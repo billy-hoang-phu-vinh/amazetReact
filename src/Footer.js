@@ -35,16 +35,7 @@ export default class Footer extends Component {
             <h4>Company</h4><ul><li><a className href="/pages/about-us">About Us</a></li><li><a className href="/pages/privacy-policy">Privacy Policy</a></li><li><a className href="/pages/terms-conditions">Terms &amp; Conditions </a></li><li><a className href="/account/register">Register</a></li></ul></div></div>
       </div>
     </div>
-    <div className="f_bot">
-      <div className="container">
-        <div className="col-md-8 col-sm-12 f_bot_left sm-text-center"><small>Furniture.ca © 2009 - 2021. All Rights Reserved.</small></div><div className="col-md-4 col-sm-12 f_bot_right">
-          <div className="partner sm-margin-top-medium">
-            <ul className="list-inline sm-text-center xs-text-center">
-              <li><img id="flexiti-footer-logo" src="//cdn.shopify.com/s/files/1/2660/5236/files/flexiti_small.png?v=12502599842505446774" alt="visa" /></li><li><img src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg" alt="visa" /></li><li><img src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/american_express-2264c9b8b57b23b0b0831827e90cd7bcda2836adc42a912ebedf545dead35b20.svg" alt="american express" /></li><li><img src="//cdn.shopify.com/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg" alt="master" /></li><li><img src="//cdn.shopify.com/s/files/1/2660/5236/files/visa-debit-EN_small.png?v=6204683545860060369" alt="visa" /></li>
-            </ul>
-          </div>
-        </div></div>
-    </div>
+    
   </div>
 </div>
 

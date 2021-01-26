@@ -2323,7 +2323,7 @@ ul {
 
 /* line 127, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_menu.scss */
 .dropdown .dropdown-menu {
-  transition: all 0.5s;
+  transition: all 0.29s;
   overflow: hidden;
   transform-origin: top center;
   transform: scale(1, 0);
@@ -2335,7 +2335,7 @@ ul {
 /* line 135, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_menu.scss */
 .dropdown .dropdown-menu .dropdown-item {
   font-size: 14px;
-  padding: 8px 20px !important;
+  padding: 20px 20px !important;
   color: #fff !important;
   background-color: rgb(83, 82, 87);
   text-transform: capitalize;

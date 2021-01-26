@@ -5,10 +5,10 @@
     margin-left: 20px; 
     margin-top: 20px;  */
     margin:13px;
+    border-radius: 10px;
 }
 
 .header{
-    background-color: #131921;
     display: flex;
     align-items: center;
     padding: 5px;
@@ -17,19 +17,21 @@
     align-items: center;
     top:0;
     z-index: 100;
-
 }
 .header__searchIcon{
     background-color: orange;
-    height: 22px !important;
+    height: 33px !important;
+    width: 2em !important; 
     padding: 5px;
 }
 .header__search{
     display: flex;
     flex: 4;
+    border: solid rgba(160, 149, 149, 0.433);
+    border-radius: 5px;
 }
 .header__searchInput{
-    height: 22px;
+    /*fix it later height: 22px; */ 
     padding: 5px;
     border: none;
     width: 100%;

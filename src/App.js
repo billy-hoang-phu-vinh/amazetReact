@@ -49,7 +49,6 @@ function App() {
             </Route>
 
             <Route path="/" exact>
-              <h1>Main page</h1>
               <Home />
             </Route>
             {/** component: default page */}
