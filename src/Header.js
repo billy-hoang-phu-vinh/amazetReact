@@ -4,7 +4,14 @@ import './Header.css'
 import SearchIcon from '@material-ui/icons/Search'
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket'
 import mainLogo from './logo/amazetLogo.png'
+import {useStateValue} from "./StateProvider";
+//import 
+
 function Header() {
+    //khoi tao gia tri
+    const [{cart}, dispatch] = useStateValue();
+    console.log(`show array ne:`);
+    console.log(cart);//chi chay mot lan
     return (
        
         <nav className="header">
@@ -43,34 +50,41 @@ function Header() {
                    
                                         
                     <li className="nav-item dropdown">
+                      <Link to="/login">
                       <a className="nav-link dropdown-toggle" href="/login" id="navbarDropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         My account & Order
                       </a>
                       <div className="dropdown-menu" aria-labelledby="navbarDropdown_1">
                         <a className="dropdown-item" href="/login"> Login</a>
+                        <Link to="/checkout">
                         <a className="dropdown-item" href="/checkout">Your order</a>
+                        </Link>
                       </div>
+                      </Link>
+                      
                     </li>
                    
   
                      {/* search box */}
                     <li className="nav-item">
                     
-                    <Link className="nav-link" to="/checkout" className="header__link">
+                    <Link  to="/checkout" className="header__link">
                     <a className="nav-link" href="/signup">Sign Up</a>
-
                      </Link>
 
                     </li>
                     {/* search icon */}
                     <li className="nav-item">
+                      <Link>
                       <a className="nav-link" href="/signup">
                       <div className="basket_logo">
                               {/* link does not refresh the page */}
                               <ShoppingBasketIcon />
-                              <span className="basket_count">0</span>
+                              <span className="basket_count">{cart?.length}</span>
                           </div>
                       </a>
+                      </Link>
+                      
                     </li>
                   </ul>
                 </div>

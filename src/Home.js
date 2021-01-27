@@ -10,13 +10,20 @@ function Home() {
 
                   {/* home row: 2 products */}
           <div className="home__product">
-            <Product id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
-            <Product id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
-            <Product id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
+          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
+          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
+          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
+          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
+          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
+          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} /> <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
+          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
+          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
+          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
+ 
+
           </div>        
 
-
-
+        {/* divide group of 4 -> round up */}
 
 
         </div>
@@ -64,7 +71,7 @@ function Home() {
                   <a href="/product/{{this._id}}">
                     <div className="single_product_item">
                       <div className="single_product_item_thumb">
-                        <img src="/img/{{this.product_picture}}" alt="image" className="img-fluid" />
+                        <img src="/img/{{this.product_picture}}" alt="" className="img-fluid" />
                       </div>
                       <h3> {'{'}{'{'}this.product_name{'}'}{'}'} </h3>
                       <p>${'{'}{'{'}this.product_price{'}'}{'}'}</p>

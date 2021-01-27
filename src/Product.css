@@ -1,4 +1,8 @@
 .product{
+    /* padding: ;
+    flex-grow: 1;
+    flex-basis: 16%; */
+
     display: flex;
     flex-direction: column;
     max-height: 400px;
@@ -28,4 +32,10 @@
 }
 .product > button{
     margin: 10px;
+}
+.p__card{
+    flex-grow: 1;
+    /* divide 3 items in a row */
+    flex-basis: 30%;
+    min-width: 30%;
 }
