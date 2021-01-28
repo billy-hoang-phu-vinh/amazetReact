@@ -10,10 +10,8 @@ import {useStateValue} from "./StateProvider";
 function Header() {
     //khoi tao gia tri
     const [{cart}, dispatch] = useStateValue();
-    console.log(`show array ne:`);
-    console.log(cart);//chi chay mot lan
     return (
-       
+        
         <nav className="header">
           {/* logo */}
           <Link className="t1" to="/">
@@ -37,17 +35,12 @@ function Header() {
                 </button>
                 <div className="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                   <ul className="navbar-nav">
-                  <li className="nav-item dropdown">
-                      <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Room design
-                      </a>
-                      <div className="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                        <a className="dropdown-item" href="/product"> bath room</a>
-                        <a className="dropdown-item" href="/login/checkout">living room</a>
-                        <a className="dropdown-item" href="/login/cart">dining room</a>
-                      </div>
+        
+                  <li className="nav-item">
+                    
+                    <a className="nav-link sale__text" href="#sale">Sale</a>
+
                     </li>
-                   
                                         
                     <li className="nav-item dropdown">
                       <Link to="/login">
@@ -66,13 +59,7 @@ function Header() {
                    
   
                      {/* search box */}
-                    <li className="nav-item">
                     
-                    <Link  to="/checkout" className="header__link">
-                    <a className="nav-link" href="/signup">Sign Up</a>
-                     </Link>
-
-                    </li>
                     {/* search icon */}
                     <li className="nav-item">
                       <Link>
@@ -80,6 +67,7 @@ function Header() {
                       <div className="basket_logo">
                               {/* link does not refresh the page */}
                               <ShoppingBasketIcon />
+                              <span>  </span>
                               <span className="basket_count">{cart?.length}</span>
                           </div>
                       </a>

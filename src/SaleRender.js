@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import Product from './Product'
 import "./RenderProduct.css"
 
-function RenderBestSeller(props) {
+function SaleRender(props) {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
 
   // get data from server
   useEffect(() => {
+    // sale
       fetch("http://furnireactsupport.herokuapp.com/products/best")
         .then(res => res.json())
         .then(
@@ -36,7 +37,7 @@ function RenderBestSeller(props) {
     } else {
 
       return (
-        <div className="home__product">
+        <div className="home__product sale__render">
           {items.map(item => (
           <Product id={item._id} price={item.price} title={"🌟 "+item.title} image={item.image} rating={item.rating} bought={item.bought} />
           ))}
@@ -45,4 +46,4 @@ function RenderBestSeller(props) {
       );
     }
 }
-export default RenderBestSeller
+export default SaleRender

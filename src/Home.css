@@ -1,6 +1,6 @@
 .home{
     /* debug */
-    max-width: 1500px;
+    max-width: 1700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -30,4 +30,15 @@
 }
 .trend_item{
     margin-top: 15px;
+}
+.banner_text_iner{
+    z-index: 4;
+}
+.banner__promotion{
+    display: flex;
+}
+.banner__promo1{
+    flex-basis: 50%;
+    flex-grow: 1;
+    justify-content: center !important;
 }

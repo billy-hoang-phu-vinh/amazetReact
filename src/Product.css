@@ -23,7 +23,7 @@
 .product__image{
     display: flex;
     height: 200px;
-    width: 100%;
+    /* width: 100%; */
     object-fit: contain;
     margin-bottom: 15px;
 }
@@ -32,13 +32,12 @@
 }
 .product__title{
     margin-bottom: 5px;
-    font-size: medium;
+    font-size: 20pt !important;
 }
 .product > button{
     margin: 10px;
 }
 .p__card{
-    flex-grow: 1;
     /* divide 3 items in a row */
     flex-basis: 25%;
     min-width: 25%;

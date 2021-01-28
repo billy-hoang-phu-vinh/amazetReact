@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+// import { Link } from 'react-router-dom'
 
 export default class Signup extends Component {
     render() {
@@ -13,15 +14,12 @@ export default class Signup extends Component {
                     </h3>
                     <form className="row contact_form" action="/signup/signUp_Form" method="post">
                       <div className="col-md-12 form-group p_star">
-                        <h4 style={{"color":"red"}}>{'{'}{'{'}Error_name{'}'}{'}'}</h4>
                         <input type="text" className="form-control" id="name" name="name" placeholder="Enter your name" />
                       </div>
                       <div className="col-md-12 form-group p_star">
-                        <h4 style={{"color":"red"}}>{'{'}{'{'}Error_mail{'}'}{'}'}</h4>
-                        <input type="email" className="form-control" id="email" name="email" placeholder="Enter your email address" defaultValue="{{email}}" />
+                        <input type="email" className="form-control" id="email" name="email" placeholder="Enter your email address" />
                       </div>
                       <div className="col-md-12 form-group p_star">
-                        <h4 style={{"color":"red"}}>{'{'}{'{'}Error_password{'}'}{'}'}</h4>                                
                         <input type="password" className="form-control" id="password" name="password" placeholder="Password" defaultValue="{{password}}" />
                       </div>
                       <div className="col-md-12 form-group p_star">

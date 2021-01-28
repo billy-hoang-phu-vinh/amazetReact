@@ -3,16 +3,23 @@ import Product from './Product'
 import RenderProduct from "./RenderProduct";
 import "./Home.css"
 import RenderBestSeller from './RenderBestSeller';
+import SaleRender from './SaleRender';
 function Home() {
   return (
     <div>
       <div className="home">
         {/* test */}
         {/* test */}
-        <div className="home__image">
-          <img className="home__image_img" src="https://i.ibb.co/ygK0VzH/banner-promofeb.png" alt="" />
+        <div className="container-fluid">
+        <div className="home__image banner__promotion">
+          <div className="banner__promo1">
+          <img className="home__image_img" src="http://setgetweb.com/p/commerce9/SSZLC2_9.0.0/com.ibm.commerce.management-center.doc/images/locale/screensnap/sbact_dispromoads.png" alt="" />
+          </div>
+          
         </div>
 
+        </div>
+        
         <div className="product__show">
           {/* home row: 2 products */}
 
@@ -22,23 +29,23 @@ function Home() {
 
         <div>
           <section className="banner_part">
-            <div className="container">
+            <div className="container-fluid">
               <div className="row align-items-center">
-                <div className="col-md-5">
+                <div className="col-md-7">
                   <div className="banner_text">
                     <div className="banner_text_iner">
                       <h2>Stay at home<br />
                           We bring it to you</h2>
                       <p>free shipping over 2000 items
         </p>
-                      <a href="product_list.html" className="btn_1">shop now</a>
+                      <div className="btn_1">shop now</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="banner_img">
-              <img src="img/banner.png" alt="#" className="img-fluid" />
+              <img src="https://images.ctfassets.net/5de70he6op10/7KotRtmFAvP7OWLTE7PHjH/93bacf07d554c2f56531e16af54a3cd4/FurnitureGateway_03_sectionals.jpg" alt="#" className="img-fluid" />
               <img src="img/banner_pattern.png " alt="#" className="pattern_img img-fluid" />
             </div>
           </section>
@@ -52,6 +59,11 @@ function Home() {
           <h2>Explore...</h2>
           <div className="show__produc">
           <RenderProduct/>
+          </div>
+
+          <div className="sale__render" id="sale">
+            <h3 >Items on Sale</h3>
+          <SaleRender/>
           </div>
           <section className="feature_part section_padding">
             <div className="container">

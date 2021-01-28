@@ -5,7 +5,7 @@ import "./css/footer.css"
 export default class Footer extends Component {
   render() {
     return (
-      <div>
+      <div  className="footer__section_div">
         {/* Site footer */}
         <div id="footer__section-footer" className="footer__section"><div id="footer">
           <div className="f_mid">

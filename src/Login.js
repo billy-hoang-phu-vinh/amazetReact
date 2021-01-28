@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Login extends Component {
   render() {
@@ -8,12 +9,12 @@ export default class Login extends Component {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-6">
-                <div className="login_part_text text-center">
+                <div className="login_part_text">
                   <div className="login_part_text_iner">
                     <h2>New to our Shop?</h2>
                     <p>There are advances being made in science and technology
               everyday, and a good example of this is the</p>
-                    <a href="/signup" className="btn_3">Create an Account</a>
+                    <Link to="/signup"> <div className="btn_3 account__create">Create an Account</div></Link>
                   </div>
                 </div>
               </div>
@@ -24,11 +25,9 @@ export default class Login extends Component {
               Please Sign in now</h3>
                     <form className="row contact_form" action="/login/" method="post" noValidate="novalidate">
                       <div className="col-md-12 form-group p_star">
-                        <h4 style={{ "color": "red" }}>{'{'}{'{'}errorM{'}'}{'}'}</h4>
-                        <input type="email" className="form-control" id="email" name="email" placeholder="Enter your email address" defaultValue="{{email}}" />
+                        <input type="email" className="form-control" id="email" name="email" placeholder="Enter your email address" />
                       </div>
                       <div className="col-md-12 form-group p_star">
-                        <h4 style={{ "color": "red" }}>{'{'}{'{'}errorP{'}'}{'}'}</h4>
                         <input type="password" className="form-control" id="password" name="password" placeholder="Password" defaultValue="{{passW}}" />
                       </div>
                       <div className="col-md-12 form-group">

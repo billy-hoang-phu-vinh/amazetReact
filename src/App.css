@@ -1,3 +1,32 @@
+@media only screen  and (min-width: 1500px) {
+  .main{
+    min-width: 1500px !important;
+  }
+}
+@media only screen  and (min-width: 1000px) and (max-width: 1499px) {
+  .main{
+    min-width: 1000px !important;
+  }
+}
+@media only screen  and (min-width: 700px) and (max-width: 999px) {
+  .main{
+    min-width: 700px !important;
+  }
+  .p__card {
+    flex-basis: 90%;
+    min-width: 90%;
+  }
+}
+@media only screen  and (max-width: 499px) {
+  .main{
+    min-width: 450px !important;
+  }
+  .p__card {
+    flex-basis: 90%;
+    min-width: 90%;
+}
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +64,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+.sale__render{
+  margin: 50px;
 }

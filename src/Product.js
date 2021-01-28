@@ -24,7 +24,7 @@ export default function Product({ id, title, image, price, rating, bought }) {
         <div className="p__card">
             <div className="product">
                 <div className="product__title">
-                    <p>{title}</p>
+                    <h4>{title}</h4>
                 </div>
                 <div className="product__price">
                     <small>$</small>

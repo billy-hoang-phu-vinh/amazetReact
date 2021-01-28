@@ -23,8 +23,8 @@ import Login from './Login';
 import Checkout from './Checkout.js'
 import Signup from './Signup';
 import notfoundpage from './notfoundpage';
-import Subheader from './Subheader';
 import SubH from './SubH';
+import SaleRender from './SaleRender';
 
 function App() {
   return (
@@ -32,11 +32,10 @@ function App() {
     <Router>
       {/** component: router */}
 
-      <div className="App">
+      <div className="container-fluid">
         <div className="app">
           <Header />
           <SubH/>
-          <Subheader/>
           <Switch>
 
             {/** component: checkout */}
@@ -53,6 +52,9 @@ function App() {
               <Signup />
             </Route>
             
+            <Route path="/sale">
+              <SaleRender/>
+            </Route>
 
             <Route path="/" exact>
               <Home />
