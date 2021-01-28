@@ -20,8 +20,11 @@ import './css/style.css'
 import Home from './Home'
 import Footer from './Footer.js';
 import Login from './Login';
+import Checkout from './Checkout.js'
 import Signup from './Signup';
 import notfoundpage from './notfoundpage';
+import Subheader from './Subheader';
+import SubH from './SubH';
 
 function App() {
   return (
@@ -32,11 +35,13 @@ function App() {
       <div className="App">
         <div className="app">
           <Header />
+          <SubH/>
+          <Subheader/>
           <Switch>
 
             {/** component: checkout */}
             <Route path="/checkout" >
-              <h1>Checkout</h1>
+              <Checkout/>
             </Route>
             {/** component: login page */}
 
@@ -47,6 +52,7 @@ function App() {
             <Route path="/signup">
               <Signup />
             </Route>
+            
 
             <Route path="/" exact>
               <Home />

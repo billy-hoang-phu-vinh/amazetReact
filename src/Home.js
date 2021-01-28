@@ -1,36 +1,22 @@
 import React from 'react'
 import Product from './Product'
+import RenderProduct from "./RenderProduct";
 import "./Home.css"
+import RenderBestSeller from './RenderBestSeller';
 function Home() {
   return (
     <div>
       <div className="home">
         {/* test */}
-        <div className="product__show">
-
-                  {/* home row: 2 products */}
-          <div className="home__product">
-          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
-          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
-          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
-          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
-          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
-          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} /> <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
-          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
-          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
-          <Product  id="1" price={1299} title="Kendall table" image="1.jpg" rating={5} />
- 
-
-          </div>        
-
-        {/* divide group of 4 -> round up */}
-
-
+        {/* test */}
+        <div className="home__image">
+          <img className="home__image_img" src="https://i.ibb.co/ygK0VzH/banner-promofeb.png" alt="" />
         </div>
 
+        <div className="product__show">
+          {/* home row: 2 products */}
 
-        <div className="home__image">
-          <img src="https://images-na.ssl-images-amazon.com/images/G/15/digital/video/merch/2020/TV/H194277_P359342_PV_FLACK_MOTION_GATEWAY_CARD_EN_1500x300_Final._CB411866681_.jpg" alt="" />
+          {/* divide group of 4 -> round up */}
         </div>
 
 
@@ -42,7 +28,7 @@ function Home() {
                   <div className="banner_text">
                     <div className="banner_text_iner">
                       <h2>Stay at home<br />
-          We bring it to you</h2>
+                          We bring it to you</h2>
                       <p>free shipping over 2000 items
         </p>
                       <a href="product_list.html" className="btn_1">shop now</a>
@@ -56,31 +42,17 @@ function Home() {
               <img src="img/banner_pattern.png " alt="#" className="pattern_img img-fluid" />
             </div>
           </section>
-          <section className="trending_items">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="section_tittle text-center">
-                    <h2>Trending Items</h2>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                {'{'}{'{'}#each bestSelling{'}'}{'}'}
-                <div className="col-lg-4 col-sm-6">
-                  <a href="/product/{{this._id}}">
-                    <div className="single_product_item">
-                      <div className="single_product_item_thumb">
-                        <img src="/img/{{this.product_picture}}" alt="" className="img-fluid" />
-                      </div>
-                      <h3> {'{'}{'{'}this.product_name{'}'}{'}'} </h3>
-                      <p>${'{'}{'{'}this.product_price{'}'}{'}'}</p>
-                    </div>
-                  </a></div>
-                {'{'}{'{'}/each{'}'}{'}'}
-              </div>
-            </div>
-          </section>
+
+
+          <div className="trend_item">
+            <h1>Trending items</h1>
+          <RenderBestSeller/>
+          </div>
+
+          <h2>Explore...</h2>
+          <div className="show__produc">
+          <RenderProduct/>
+          </div>
           <section className="feature_part section_padding">
             <div className="container">
               <div className="row justify-content-between">

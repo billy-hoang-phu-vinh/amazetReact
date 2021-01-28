@@ -1,0 +1,67 @@
+.max__menu{
+    /* test */
+    width: 800px !important;
+    height: 800px !important;
+    background-color: burlywood !important;
+
+
+    padding: 20px 20px !important;
+    color: #fff !important;
+    background-color: rgb(83, 82, 87);
+    text-transform: capitalize;
+
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+/* import css */
+/*! CSS Used from: Embedded */
+a{background:transparent;}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+a{color:#428bca;text-decoration:none;}
+a:hover,a:focus{color:#2a6496;text-decoration:underline;}
+a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+a{color:#0172A0;}
+a:hover{cursor:pointer;}
+/*! CSS Used from: Embedded */
+a{-webkit-text-decoration-skip:objects;background-color:transparent;}
+*{box-sizing:border-box;}
+a{background:0 0;}
+/*! CSS Used from: Embedded */
+a{color:#2f3337;text-decoration:none;}
+.DropDown_bath{display:flex;flex-direction:column;align-items:flex-start;align-self:flex-start;margin-bottom:22px;width:25%;}
+@media (-ms-high-contrast:active),(-ms-high-contrast:none){
+.DropDown_bath{flex-basis:25%;display:flex;flex-direction:column;margin-bottom:45px;}
+}
+.DropDown_bath+:nth-child(4){order:2;-ms-flex-order:5;}
+@media (-ms-high-contrast:active),(-ms-high-contrast:none){
+.DropDown_bath+:nth-child(4){order:5;}
+}
+.DropDown_bath_element{font-size:14px;cursor:pointer;color:#626669;border-bottom:1px solid #2f3337;margin:0 0 8px;padding:0 0 2px;border-bottom:1px solid transparent;line-height:normal;align-self:flex-start;}
+.DropDown_bath_element:hover{border-bottom:1px solid #2f3337;text-shadow:none;}
+.DropDown_bath_element:last-child{margin-bottom:0;}
+.DropDown_columnTitle_ec{margin-bottom:15px;color:#2f3337;font-weight:700;}
+.DropDown_columnTitle_ec:hover{text-decoration:none;letter-spacing:normal;}
+header a:hover{text-decoration:none;color:inherit;}
+header *{box-sizing:border-box;}
+/*! CSS Used from: Embedded */
+*{box-sizing:border-box;}
+/*! CSS Used from: Embedded */
+*{box-sizing:border-box;}
+/*! CSS Used from: Embedded */
+*{box-sizing:border-box;}
+/*! CSS Used from: Embedded */
+*{box-sizing:border-box;}
+/*! CSS Used from: Embedded */
+*{box-sizing:border-box;}
+/*! CSS Used from: Embedded */
+*{box-sizing:border-box;}

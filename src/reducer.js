@@ -1,6 +1,9 @@
 export const initialState = {
     cart: [], 
 }
+export const getcartTotal = (basket) => 
+  basket?.reduce((amount, item) => item.price + amount, 0);
+
 
 const reducer = (state,action) => {
     console.log(action);//test: show the action

@@ -3,7 +3,7 @@ import './Product.css'
 import Rating from '@material-ui/lab/Rating';
 import { useStateValue } from './StateProvider';
 
-export default function Product({ id, title, image, price, rating }) {
+export default function Product({ id, title, image, price, rating, bought }) {
     //const [value, setValue] = React.useState(2);
     const [{cart},dispatch] = useStateValue();
       //event to add to basket
@@ -32,6 +32,9 @@ export default function Product({ id, title, image, price, rating }) {
                 </div>
                 <div className="product__rating">
                     <Rating name="read-only" value={rating} readOnly />
+                </div>
+                <div className="product__bought">
+                    {bought} ratings
                 </div>
                 {/* <div className="product__rating">
                     {

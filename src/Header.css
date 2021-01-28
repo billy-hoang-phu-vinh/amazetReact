@@ -1,3 +1,7 @@
+.header__searchInput:hover {
+    background-color: bisque;
+}
+
 .header__logo{
     width: 100px;
     /* fix it later */
@@ -26,9 +30,13 @@
 }
 .header__search{
     display: flex;
-    flex: 4;
+    flex: 1;
     border: solid rgba(160, 149, 149, 0.433);
     border-radius: 5px;
+}
+.main_menu{
+    display: flex;
+    flex: 3;
 }
 .header__searchInput{
     /*fix it later height: 22px; */ 

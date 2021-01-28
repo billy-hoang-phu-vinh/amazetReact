@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import { StateProdiver } from './StateProvider';
 import  reducer,{initialState} from './reducer.js'
 import * as serviceWorker from './serviceWorker'
