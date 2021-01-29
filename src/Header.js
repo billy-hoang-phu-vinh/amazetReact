@@ -48,9 +48,9 @@ function Header() {
                         My account & Order
                       </a>
                       <div className="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                        <a className="dropdown-item" href="/login"> Login</a>
-                        <Link to="/checkout">
-                        <a className="dropdown-item" href="/checkout">Your order</a>
+                        <div className="dropdown-item"> Login</div>
+                        <Link to="/cart">
+                        <div className="dropdown-item">Your order</div>
                         </Link>
                       </div>
                       </Link>

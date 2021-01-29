@@ -39,7 +39,7 @@ function SaleRender(props) {
       return (
         <div className="home__product sale__render">
           {items.map(item => (
-          <Product id={item._id} price={item.price} title={"🌟 "+item.title} image={item.image} rating={item.rating} bought={item.bought} />
+          <Product id={item._id} price={item.price} title={"💡 "+item.title} image={item.image} rating={item.rating} bought={item.bought} />
           ))}
       </div>
 

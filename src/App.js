@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import './App.css';
 import React from "react";
 import {
@@ -25,6 +26,8 @@ import Signup from './Signup';
 import notfoundpage from './notfoundpage';
 import SubH from './SubH';
 import SaleRender from './SaleRender';
+import CheckoutFurniture from './CheckoutFurniture.js';
+import Cart from './Cart.js';
 
 function App() {
   return (
@@ -51,7 +54,17 @@ function App() {
             <Route path="/signup">
               <Signup />
             </Route>
-            
+            {/* cart */}
+            <Route path="/cart">
+              <Cart/>
+            </Route>
+
+            {/* checkout furniture */}
+            <Route path="/checkoutf">
+              <CheckoutFurniture/>
+            </Route>
+
+
             <Route path="/sale">
               <SaleRender/>
             </Route>
