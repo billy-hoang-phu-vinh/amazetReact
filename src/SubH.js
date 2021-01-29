@@ -1,12 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './SubH.css'
 import { useStateValue } from "./StateProvider";
 //import 
 
 function Header() {
   //khoi tao gia tri
-  const [{ cart }, dispatch] = useStateValue();
+  const [{ cart }] = useStateValue();
+  // const [{ cart }, dispatch] = useStateValue();
   console.log(`show array ne:`);
   console.log(cart);//chi chay mot lan
   return (

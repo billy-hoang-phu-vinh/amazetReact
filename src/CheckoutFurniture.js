@@ -4,15 +4,16 @@ import './CheckoutProduct.css'
 import { useStateValue } from "./StateProvider";
 import CheckoutSubTotal from './Subcomponent/CheckoutSubTotal.js'
 function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
-  const [{ cart }, dispatch] = useStateValue();
-
-  const removeFromcart = () => {
-    // remove the item from the cart
-    dispatch({
-      type: 'REMOVE_FROM_CART',
-      id: id,
-    })
-      }
+  // const [{ cart }, dispatch] = useStateValue();
+  const [{ cart }] = useStateValue();
+  
+  // const removeFromcart = () => {
+  //   // remove the item from the cart
+  //   dispatch({
+  //     type: 'REMOVE_FROM_CART',
+  //     id: id,
+  //   })
+  //     }
     //calculate subtotal
     let subtotal = 0;
     cart.map(item => (
@@ -31,11 +32,11 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
             <div className="check_title">
               <h2>
                 Have a coupon?
-            <a >Click here to enter your code</a>
+            <a href="#1">Click here to enter your code</a>
               </h2>
             </div>
             <input type="text" placeholder="Enter coupon code" />
-            <a className="tp_btn" >Apply Coupon</a>
+            <a className="tp_btn" href="#1">Apply Coupon</a>
           </div>
           <div className="billing_details">
             <div className="row">
@@ -110,7 +111,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                   <h2>Your Order</h2>
                   <ul className="list">
                     <li>
-                      <a >Product
+                      <a href="#1">Product
                     <span>Total</span>
                       </a>
                     </li>
@@ -133,17 +134,17 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                   </ul>
                   <ul className="list list_2">
                     <li>
-                      <a >Subtotal
+                      <a href="#1">Subtotal
                     <span>${subtotal}</span>
                       </a>
                     </li>
                     <li>
-                      <a >Shipping
+                      <a href="#1">Shipping
                     <span>Flat rate: $12.00</span>
                       </a>
                     </li>
                     <li>
-                      <a >Total (Tax +13%)
+                      <a href="#1">Total (Tax +13%)
                     <span>${subtotal_tax}</span>
                       </a>
                     </li>
@@ -174,9 +175,9 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                   <div className="creat_account">
                     <input type="checkbox" id="f-option4" name="selector" />
                     <label htmlFor="f-option4">I’ve read and accept the </label>
-                    <a >terms &amp; conditions*</a>
+                    <a href="#1">terms &amp; conditions*</a>
                   </div>
-                  <a className="btn_3" >Proceed to Paypal</a>
+                  <a className="btn_3" href="#1">Proceed to Paypal</a>
                 </div>
               </div>
             </div>

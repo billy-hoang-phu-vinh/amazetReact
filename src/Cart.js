@@ -5,15 +5,16 @@ import { useStateValue } from "./StateProvider";
 import RenderProductCart from "./RenderProductCart"
 
 function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
-    const [{ cart }, dispatch] = useStateValue();
+    const [{ cart }] = useStateValue();
 
-    const removeFromcart = () => {
-        // remove the item from the cart
-        dispatch({
-            type: 'REMOVE_FROM_cart',
-            id: id,
-        })
-    }
+    // const removeFromcart = () => {
+    //     // remove the item from the cart
+    //     dispatch({
+    //         type: 'REMOVE_FROM_cart',
+    //         id: id,
+    //     })
+    // }
+    
     //calculate subtotal
     let subtotal = 0;
     cart.map(item => (
@@ -60,7 +61,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                                         <td />
                                         <td>
                                             <div className="cupon_text float-right">
-                                                <a className="btn_1" href="#">Close Coupon</a>
+                                                <a className="btn_1" href="#1">Close Coupon</a>
                                             </div>
                                         </td>
                                     </tr>
@@ -115,7 +116,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                                                     <option value={4}>Select a State</option>
                                                 </select>
                                                 <input className="post_code" type="text" placeholder="Postcode/Zipcode" />
-                                                <a className="btn_1" href="#">Update Details</a>
+                                                <a className="btn_1" href="#1">Update Details</a>
                                             </div>
                                         </td>
                                     </tr>

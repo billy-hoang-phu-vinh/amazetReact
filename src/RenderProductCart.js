@@ -1,26 +1,25 @@
 import React from 'react'
 import './Product.css'
-import Rating from '@material-ui/lab/Rating';
-import { useStateValue } from './StateProvider';
+// import { useStateValue } from './StateProvider';
 
 export default function RenderProductCart({ id, title, image, price, rating, bought }) {
     //const [value, setValue] = React.useState(2);
-    const [{cart},dispatch] = useStateValue();
+    // const [{cart},dispatch] = useStateValue();
       //event to update the single item inside cart
-        const addToBasket = () => {
-            //fire an object ->
-            //modify dispatch
-            dispatch({
-            type: "ADD_TO_CART",
-            item:{
-                id:id,
-                title: title,
-                image: image,
-                price:price,
-                rating:rating,
-            }
-            });
-        }
+        // const addToBasket = () => {
+        //     //fire an object ->
+        //     //modify dispatch
+        //     dispatch({
+        //     type: "ADD_TO_CART",
+        //     item:{
+        //         id:id,
+        //         title: title,
+        //         image: image,
+        //         price:price,
+        //         rating:rating,
+        //     }
+        //     });
+        // }
     return (
         // this is a single table row
         <tr>

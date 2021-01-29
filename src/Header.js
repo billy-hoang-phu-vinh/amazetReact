@@ -9,7 +9,7 @@ import {useStateValue} from "./StateProvider";
 
 function Header() {
     //khoi tao gia tri
-    const [{cart}, dispatch] = useStateValue();
+    const [{cart}] = useStateValue();
     return (
         
         <nav className="header">

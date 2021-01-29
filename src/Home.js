@@ -1,5 +1,4 @@
 import React from 'react'
-import Product from './Product'
 import RenderProduct from "./RenderProduct";
 import "./Home.css"
 import RenderBestSeller from './RenderBestSeller';
