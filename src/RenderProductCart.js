@@ -36,7 +36,7 @@ export default function RenderProductCart({ id, title, image, price, rating, bou
         </td>
         <td>
             {/* price */}
-            <h5>$ {price}</h5>
+            <h5>${price}</h5>
         </td>
         <td>
             <div className="product_count">
