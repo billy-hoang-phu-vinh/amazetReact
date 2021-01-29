@@ -5,7 +5,9 @@ import { useStateValue } from './StateProvider';
 
 export default function Product({ id, title, image, price, rating, bought }) {
     //const [value, setValue] = React.useState(2);
-    const [dispatch] = useStateValue();
+    
+    // eslint-disable-next-line
+    const [{cart},dispatch] = useStateValue();
     // const [{cart},dispatch] = useStateValue();
       //event to add to basket
         const addToBasket = () => {
