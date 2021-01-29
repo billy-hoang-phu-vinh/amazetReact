@@ -59,7 +59,7 @@ export default function RenderProductCart({ id, title, image, price, rating, bou
         </td>
         <td>
             {/* total, in simple case we put the price */}
-            <h5>${price}</h5>
+            <p>$&nbsp;{price}&nbsp;</p>
         </td>
     </tr>
    
