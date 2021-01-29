@@ -4883,7 +4883,7 @@ input:focus {
 
 /* line 1146, /Applications/MAMP/htdocs/old/palash/cl/shop_html/sass/_product.scss */
 .cart_inner .table tbody tr td h5 {
-  font-size: 14px;
+  /* font-size: 14px; */
   color: #2a2a2a;
   font-family: "Rubik", sans-serif;
   margin-bottom: 0px;

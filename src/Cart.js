@@ -106,14 +106,14 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
                       <i className="fa fa-caret-down" aria-hidden="true" />
                                                 </h6>
                                                 <select className="shipping_select">
-                                                    <option value={1}>Bangladesh</option>
-                                                    <option value={2}>India</option>
-                                                    <option value={4}>Pakistan</option>
+                                                    <option value={1}>Canada</option>
+                                                    <option value={2}>US</option>
+                                                    <option value={4}>UK</option>
                                                 </select>
                                                 <select className="shipping_select section_bg">
-                                                    <option value={1}>Select a State</option>
-                                                    <option value={2}>Select a State</option>
-                                                    <option value={4}>Select a State</option>
+                                                    <option value={1}>Ontario</option>
+                                                    <option value={2}>Quebec</option>
+                                                    <option value={4}>Vancouver</option>
                                                 </select>
                                                 <input className="post_code" type="text" placeholder="Postcode/Zipcode" />
                                                 <a className="btn_1" href="#1">Update Details</a>
