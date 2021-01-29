@@ -10,7 +10,7 @@ function SaleRender(props) {
   // get data from server
   useEffect(() => {
     // sale
-      fetch("http://furnireactsupport.herokuapp.com/products/best")
+      fetch("https://furnireactsupport.herokuapp.com/products/best")
         .then(res => res.json())
         .then(
           (result) => {

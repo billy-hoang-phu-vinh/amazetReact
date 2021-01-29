@@ -8,7 +8,7 @@ function RenderProduct(props) {
 
   // get data from server
   useEffect(() => {
-      fetch("http://furnireactsupport.herokuapp.com/products")
+      fetch("https://furnireactsupport.herokuapp.com/products")
         .then(res => res.json())
         .then(
           (result) => {
