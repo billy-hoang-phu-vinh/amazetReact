@@ -12,12 +12,13 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
       type: 'REMOVE_FROM_CART',
       id: id,
     })
-  }
-//calculate subtotal
-let subtotal = 0;
-cart.map(item => (
-    subtotal+=item.price
-))
+      }
+    //calculate subtotal
+    let subtotal = 0;
+    cart.map(item => (
+        subtotal+=item.price
+    ))
+    let subtotal_tax = ((subtotal+12)*1.13).toFixed(2);
   return (
     <div>
 
@@ -142,8 +143,8 @@ cart.map(item => (
                       </a>
                     </li>
                     <li>
-                      <a >Total
-                    <span>${subtotal+12}</span>
+                      <a >Total (Tax +13%)
+                    <span>${subtotal_tax}</span>
                       </a>
                     </li>
                   </ul>
