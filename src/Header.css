@@ -3,7 +3,7 @@
 }
 .header__search{
     display: flex;
-    flex: 2.5;
+    flex: 3;
     border: solid rgba(160, 149, 149, 0.433);
     border-radius: 5px;
     flex-direction: row;
@@ -14,7 +14,7 @@
 }
 .searchcomplete{
     width: 100%;
-    flex-basis: 93%;
+    flex-basis: 100%;
 }
 .searchicon{
     flex-basis: 7%;
@@ -40,7 +40,20 @@
 
     border-radius: 10px;
 }
-
+.burger_menu{
+    display: none;
+}
+@media (max-width: 567px){
+    .burger_menu{
+        display: block;
+    }
+    .t1{
+        display: none;
+    }
+    .header__search{
+        margin-left: 70px;
+    }
+  }
 .header{
     display: flex;
     align-items: center;

@@ -1,20 +1,31 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
-import SearchIcon from '@material-ui/icons/Search'
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket'
 import mainLogo from './logo/amazetLogo.png'
 import { useStateValue } from "./StateProvider";
 import { Autocomplete } from '@material-ui/lab';
 import TextField from '@material-ui/core/TextField';
+import Burger from './Burger/Burger.js';
+import Menu from './Menu/Menu.js';
+import{useRef } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './theme';
+
+import { useOnClickOutside } from './hooks';
 
 //test
-import { Redirect } from "react-router-dom"; 
 import { useHistory } from "react-router-dom";
 import { useState, useEffect } from 'react';
+
 function Header() {
+  //burger menu
+  const [open, setOpen] = useState(false);
+  const node = useRef();
+  const menuId = "main-menu";
+  useOnClickOutside(node, () => setOpen(false));
+
   //set temp search value
-  var search_product="all";
   //state = { redirect: null };
   const [{ cart }] = useStateValue();
  
@@ -46,6 +57,15 @@ function Header() {
   return (
     <nav className="header">
       {/* logo */}
+      <div className="burger_menu">
+      <ThemeProvider theme={theme}>
+
+      <Burger open={open} setOpen={setOpen} aria-controls={menuId} />
+      <Menu open={open} setOpen={setOpen} id={menuId} />
+      </ThemeProvider>
+      </div>
+
+
       <Link className="t1" to="/">
         <img alt="" className="header__logo" src={mainLogo} />
 
@@ -82,9 +102,7 @@ function Header() {
             <div className="col-lg-12">
               <nav className="navbar navbar-expand-lg navbar-light">
                 {/* fix later: button (hamburger menu) for mobile display */}
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span className="menu_icon"><i className="fas fa-bars" /></span>
-                </button>
+
                 <div className="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                   <ul className="navbar-nav">
 

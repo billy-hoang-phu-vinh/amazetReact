@@ -22,9 +22,7 @@ function Header() {
             <div className="col-lg-12">
               <nav className="navbar navbar-expand-lg navbar-light">
                 {/* fix later: button (hamburger menu) for mobile display */}
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span className="menu_icon"><i className="fas fa-bars" /></span>
-                </button>
+
                 <div className="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                   <ul className="navbar-nav">
                     {/* bath */}
