@@ -28,6 +28,7 @@ import SubH from './SubH';
 import SaleRender from './SaleRender';
 import CheckoutFurniture from './CheckoutFurniture.js';
 import Cart from './Cart.js';
+import Renderitem from './Renderitem';
 
 function App() {
   return (
@@ -72,10 +73,11 @@ function App() {
             <Route path="/" exact>
               <Home />
             </Route>
+            <Route path="/item/:id" render={(props)=> (<Renderitem id={props.match.params.id}/>)}>
+             
+            </Route>
             {/** component: default page */}
-
             <Route path="" component={notfoundpage}/>
-
           </Switch>
           <Footer />
         </div>
